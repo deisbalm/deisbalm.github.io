@@ -2,20 +2,20 @@
 
     .main-header {
         h1 {
-            color: $blanco;
+            color: #ffffff;
     
             .gifos {
-                color: $turquesa;
+                color: #50E3C2;
             }
         }
         .buscador-contenedor {
             .buscador {
-                border: 1px solid $blanco;
+                border: 1px solid #ffffff;
 
                 .buscador-bloque {
                     .buscador-y-lupa {
                         .input-buscador {
-                            color: $blanco;
+                            color: #ffffff;
                         }
                     } 
                 }
@@ -25,58 +25,58 @@
 
     //busqueda
     .buscador-activo {
-        border: 1px solid $blanco;
+        border: 1px solid #ffffff;
         
         .buscador-bloque {
             .buscador-y-lupa {
                 
     
                 .input-buscador {
-                    color: $blanco;
+                    color: #ffffff;
                     background-color: unset;
                 }
             }
         }
     
         .buscador-sugerencias { 
-            border-top: 1px solid $blanco;
+            border-top: 1px solid #ffffff;
         }
     }
 
     .trending-sugerencias {
         h3 {
-            color: $blanco;
+            color: #ffffff;
         }
     
         #trending-topics {
-            color: $blanco;
+            color: #ffffff;
         }
     }
 
     .titulo-busqueda {
-        color: $blanco;
+        color: #ffffff;
     }
 
     .btn-generico {
-        color: $blanco;
-        border: 1px solid $blanco;
+        color: #ffffff;
+        border: 1px solid #ffffff;
     }
 
     .btn-generico:hover {
-        background-color: $blanco;
-        color: $violeta;
+        background-color: #ffffff;
+        color: #572EE5;
     }
 
     //seccion trending
     .trending {
-        background-color: $gris-trending-oscuro;
+        background-color: #222326;
     
         h2 {
-            color: $blanco;
+            color: #ffffff;
         }
     
         p {
-            color: $blanco;
+            color: #ffffff;
         }
     }
 }

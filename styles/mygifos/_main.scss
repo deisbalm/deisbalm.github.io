@@ -25,7 +25,7 @@
 
     h3 {
         @include titulos;
-        color: $turquesa;
+        color: #50E3C2;
         font-size: 18px;
         line-height: 28px;
         margin-top: 15px;
@@ -102,7 +102,7 @@
     .gif-acciones-resultados-misgifos {
         position: absolute;
         z-index: 0;
-        background-color: $violeta-op2;
+        background-color: rgba(87,46,229,0.9);
         width: 220px;
         height: 200px;
     }
@@ -117,7 +117,7 @@
     .iconos-acciones-box {
         width: 32px;
         height: 32px;
-        background-color: $blanco-op;
+        background-color:rgba(255, 255, 255, 0.7);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -140,7 +140,7 @@
     }
 
     .iconos-acciones-box:hover {
-        background-color: $blanco;
+        background-color: #ffffff;
     }
 
     .textos-descripcion-gif-misgifos {
@@ -152,7 +152,7 @@
     .user-gif-misgifos {
         @include textos-mobile;
         text-align: left;
-        color: $blanco;
+        color: #ffffff;
         font-weight: 300;
         font-size: 15px;
         line-height: 18px;
@@ -163,7 +163,7 @@
     .titulo-gif-misgifos {
         @include textos-mobile;
         text-align: left;
-        color: $blanco;
+        color: #ffffff;
         font-size: 16px;
         line-height: 19px;
         font-weight: 500;
@@ -190,7 +190,7 @@
     .gif-acciones-resultados-misgifos {
         position: absolute;
         z-index: 0;
-        background-color: $violeta-op2;
+        background-color:rgba(87,46,229,0.6);
         width: 260px;
         height: 200px;
     }

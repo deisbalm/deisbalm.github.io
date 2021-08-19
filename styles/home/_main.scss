@@ -9,7 +9,7 @@
         padding: 7px 54px 31px 54px;
 
         .gifos {
-            color: $turquesa;
+            color: #50E3C2;
         }
     }
 
@@ -23,7 +23,7 @@
         }
 
         .buscador {
-            border: 1px solid $violeta;
+            border: 1px solid #572EE5;
             border-radius: 27px;
             width: 334px;
             height: 50px;
@@ -48,8 +48,8 @@
                     .input-buscador {
                         margin-left: 15px;
                         border: none;
-                        font-family: $roboto;
-                        color: $gris-medio;
+                        font-family: 'Roboto', sans-serif;
+                        color: #9CAFC3;
                         font-size: 16px;
                         text-align: left;
                         line-height: 19px;
@@ -82,7 +82,7 @@
 
 //clases definidas para el buscador abierto
 .buscador-activo {
-    border: 1px solid $violeta;
+    border: 1px solid #572EE5;
     border-radius: 27px;
     width: 334px;
     height: 200px;
@@ -106,8 +106,8 @@
             .input-buscador {
                 margin-left: 15px;
                 border: none;
-                font-family: $roboto;
-                color: $negro;
+                font-family: 'Roboto', sans-serif;
+                color: #000000;
                 font-size: 16px;
                 text-align: left;
                 line-height: 19px;
@@ -145,8 +145,8 @@
             .buscador-sugerencia-texto {
                 margin-left: 20px;
                 border: none;
-                font-family: $roboto;
-                color: $gris-medio;
+                font-family: 'Roboto', sans-serif;
+                color: #9CAFC3;
                 font-size: 16px;
                 text-align: left;
                 line-height: 19px;
@@ -168,8 +168,8 @@
     }
 
     #trending-topics {
-        font-family: $montse;
-        color: $violeta;
+        font-family:  'Montserrat', sans-serif;
+        color: #572EE5;
         font-size: 14px;
         text-align: center;
         line-height: 25px;
@@ -197,7 +197,7 @@
     top: 1;
     left: calc(50% - 78.5px);
     width: 157px;
-    border-bottom: 1px solid $gris-medio;
+    border-bottom: 1px solid #9CAFC3;
     opacity: 0.5;
 }
 
@@ -237,13 +237,13 @@
 }
 
 .btn-generico {
-    color: $violeta;
+    color: #572EE5;
     background-color: unset;
-    border: 1px solid $violeta;
+    border: 1px solid #572EE5;
     border-radius: 25px;
     padding: 16px 32px;
     cursor: pointer;
-    font-family: $montse;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     line-height: 16px;
     text-align: center;
@@ -260,7 +260,7 @@
 
 .busqueda-error-texto {
     @include titulos;
-    color: $turquesa;
+    color: #50E3C2;
     font-size: 18px;
     line-height: 28px;
 }
@@ -293,7 +293,7 @@
     .gif-acciones-resultados {
         position: absolute;
         z-index: 0;
-        background-color: $violeta-op2;
+        background-color: rgba(87,46,229,0.6);
         width: 220px;
         height: 200px;
     }
@@ -308,7 +308,7 @@
     .iconos-acciones-box {
         width: 32px;
         height: 32px;
-        background-color: $blanco-op;
+        background-color: rgba(255, 255, 255, 0.7);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -331,7 +331,7 @@
     }
 
     .iconos-acciones-box:hover {
-        background-color: $blanco;
+        background-color: #ffffff;
     }
 
     .textos-descripcion-gif-resultados {
@@ -343,7 +343,7 @@
     .user-gif-resultados {
         @include textos-mobile;
         text-align: left;
-        color: $blanco;
+        color: #ffffff;
         font-size: 15px;
         line-height: 18px;
         padding: 0;
@@ -353,7 +353,7 @@
     .titulo-gif-resultados {
         @include textos-mobile;
         text-align: left;
-        color: $blanco;
+        color: #ffffff;
         font-size: 16px;
         line-height: 19px;
         font-weight: 500;
@@ -367,8 +367,8 @@
 
     //boton VER MAS hover
     .btn-generico:hover {
-        background-color: $violeta;
-        color: $blanco;
+        background-color: #572EE5;
+        color: #ffffff;
     }
 }
 

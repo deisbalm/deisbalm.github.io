@@ -25,7 +25,7 @@
 
     h3 {
         @include titulos;
-        color: $turquesa;
+        color: #50E3C2;
         font-size: 18px;
         line-height: 28px;
         margin-top: 15px;
@@ -38,7 +38,7 @@
     text-align: center;
 }
 
-.resultados-favoritos { //el contenedor con las 4 columnas
+.resultados-favoritos {
     margin: 38px 10px 53px 10px;
     display: flex;
     flex-wrap: wrap;
@@ -46,7 +46,7 @@
     justify-content: center;
 }
 
-.resultados-gif-box-fav { //la caja con cada gif
+.resultados-gif-box-fav { 
     width: 156px;
     height: 120px; 
     overflow: hidden;
@@ -83,7 +83,7 @@
            }
        }
 
-    .resultados-favoritos { //el contenedor con las 4 columnas
+    .resultados-favoritos { 
         margin: 38px 10px 53px 10px;
         display: flex;
         flex-wrap: wrap;
@@ -91,7 +91,7 @@
         justify-content: center;
     }
 
-    .resultados-gif-box-fav { //la caja con cada gif
+    .resultados-gif-box-fav { 
         width: 220px;
         height: 200px; 
         margin: 0 10px 25px 10px;
@@ -100,7 +100,7 @@
     .gif-acciones-resultados-fav {
         position: absolute;
         z-index: 0;
-        background-color: $violeta-op2;
+        background-color: rgba(87,46,229,0.6);
         width: 220px;
         height: 200px;
     }
@@ -115,7 +115,7 @@
     .iconos-acciones-box {
         width: 32px;
         height: 32px;
-        background-color: $blanco-op;
+        background-color: (255, 255, 255, 0.7);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -124,7 +124,6 @@
     }
 
     .favorito-fav {
-        //background-color: $blanco;
         cursor: pointer;
     }
 
@@ -139,7 +138,7 @@
     }
 
     .iconos-acciones-box:hover {
-        background-color: $blanco;
+        background-color: #ffffff;
     }
 
     .textos-descripcion-gif-favoritos {
@@ -151,7 +150,7 @@
     .user-gif-favoritos {
         @include textos-mobile;
         text-align: left;
-        color: $blanco;
+        color: #ffffff;
         font-weight: 300;
         font-size: 15px;
         line-height: 18px;
@@ -162,7 +161,7 @@
     .titulo-gif-favoritos {
         @include textos-mobile;
         text-align: left;
-        color: $blanco;
+        color: #ffffff;
         font-size: 16px;
         line-height: 19px;
         font-weight: 500;
@@ -191,7 +190,7 @@
     .gif-acciones-resultados-fav {
         position: absolute;
         z-index: 0;
-        background-color: $violeta-op2;
+        background-color: rgba(87,46,229,0.6);
         width: 260px;
         height: 200px;
     }

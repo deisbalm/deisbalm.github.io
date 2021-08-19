@@ -4,47 +4,47 @@
             .ilus-grabar-contenedor {
                 .div-grabacion {
                     .recuadro-grabacion {
-                        border: 1px solid $blanco;
+                        border: 1px solid #ffffff;
 
                         .video-contenedor {
                             #titulo-grabargifo {
-                                color: $blanco;
+                                color: #ffffff;
 
                                 .gifos-crear {
-                                    color: $turquesa;
+                                    color: #50E3C2;
                                 }
                             }
 
                             #texto-grabargifo {
-                                color: $blanco;
+                                color: #ffffff;
                             }
 
                             .overlay-video {
                                 display: none;
 
-                                background-color: $violeta-op2;
+                                background-color: rgba(87,46,229,0.9);
 
                                 #overlay-video-actions {
                                     #btn-creargifo-descargar {
-                                        background-color: $blanco-op;
+                                        background-color: #ffffff;
                                     }
 
                                     #btn-creargifo-descargar:hover {
-                                        background-color: $blanco;
+                                        background-color: #ffffff;
                                     }
 
                                     #btn-creargifo-link {
-                                        background-color: $blanco-op;
+                                        background-color: #ffffff;
                                     }
 
                                     #btn-creargifo-link:hover {
-                                        background-color: $blanco;
+                                        background-color: #ffffff;
                                     }
                                 }
 
                                 #overlay-video-textos {
                                     #overlay-video-parrafo {
-                                        color: $blanco;
+                                        color: #ffffff;
                                     }
                                 }
                             }
@@ -54,29 +54,29 @@
                     div {
                         .crear-pasos {
                             p {
-                                border: 1px solid $blanco;
+                                border: 1px solid #ffffff;
 
-                                color: $blanco;
+                                color: #ffffff;
                             }
 
                             .paso-activo {
-                                background-color: $blanco;
-                                color: $violeta;
+                                background-color: #ffffff;
+                                color: #572EE5;
                             }
                         }
 
                         .contador-contenedor {
                             #contador-grabacion {
-                                color: $blanco;
+                                color: #ffffff;
                             }
 
                             #contador-repetircaptura {
-                                color: $blanco;
-                                border-bottom: 2px solid $gris-trending-oscuro;
+                                color: #ffffff;
+                                border-bottom: 2px solid #222326;
                             }
 
                             #contador-repetircaptura:hover {
-                                border-bottom: 2px solid $turquesa;
+                                border-bottom: 2px solid #50E3C2;
                             }
                         }
                     }

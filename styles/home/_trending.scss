@@ -1,7 +1,7 @@
 //estilos seccion fija de trendig gifos
 .trending {
     margin-top: 79px;
-    background-color: $gris-claro;
+    background-color: #F3F5F8;
     padding-bottom: 82px;
 
     h2 {
@@ -67,7 +67,7 @@
 
     .slider-prev {
         display: block;
-        border: 1px solid $violeta;
+        border: 1px solid #572EE5;
         width: 40px;
         height: 40px;
         display: flex;
@@ -81,7 +81,7 @@
     }
 
     .slider-prev:hover {
-        background-color: $violeta;
+        background-color: #572EE5;
 
         .prev-violeta {
             display: none;
@@ -94,7 +94,7 @@
 
     .slider-next {
         display: block;
-        border: 1px solid $violeta;
+        border: 1px solid #572EE5;
         width: 40px;
         height: 40px;
         display: flex;
@@ -108,7 +108,7 @@
     }
 
     .slider-next:hover {
-        background-color: $violeta;
+        background-color: #572EE5;
 
         .next-violeta {
             display: none;
@@ -148,7 +148,7 @@
     .gif-acciones {
         position: absolute;
         z-index: 0;
-        background-color: $violeta-op2;
+        background-color: rgba(87,46,229,0.6);
         width: 243px;
         height: 187px;
     }
@@ -163,7 +163,7 @@
     .iconos-acciones-box {
         width: 32px;
         height: 32px;
-        background-color: $blanco-op;
+        background-color:rgba(255, 255, 255, 0.7);
         display: flex;
         justify-content: center;
         align-content: center;
@@ -186,7 +186,7 @@
     }
 
     .iconos-acciones-box:hover {
-        background-color: $blanco;
+        background-color: #ffffff;
     }
 
     .textos-descripcion-gif {
@@ -199,7 +199,7 @@
     .user-gif {
         @include textos-mobile;
         text-align: left;
-        color: $blanco;
+        color: #ffffff;
         font-size: 15px;
         line-height: 18px;
         font-weight: 300;
@@ -210,7 +210,7 @@
     .titulo-gif {
         @include textos-mobile;
         text-align: left;
-        color: $blanco;
+        color: #ffffff;
         font-size: 16px;
         line-height: 19px;
         font-weight: 500;

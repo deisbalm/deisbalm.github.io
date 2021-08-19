@@ -1,24 +1,24 @@
 //menu mobile
 
 .body-dark {
-    background-color: $gris-oscuro;
+    background-color: #37383C;
 
     .linea-violeta {
-        background-color: $negro;
+        background-color: #000000;
     }
 
     header {
         .navbar {
-            background-color: $gris-oscuro;
+            background-color: #37383C;
 
             nav {
                 .menu {
                     ul {
-                        background-color: $negro;
+                        background-color: #000000;
 
                         li {
                             .menu-items {
-                                color: $blanco;
+                                color: #ffffff;
                             }
                         }
 
@@ -29,14 +29,14 @@
 
                     label {
                         span {
-                            background-color: $blanco;
+                            background-color: #ffffff;
                         }
                     }
 
-                    /* lo que pasa cuando apreto el checkbox*/
+    
 
                     input:checked ~ label span {
-                        background-color: $blanco;
+                        background-color: #ffffff;
                     }
                 }
             }
@@ -57,24 +57,24 @@
                         ul {
                             li {
                                 .menu-items {
-                                    color: $blanco;
-                                    border-bottom: 2px solid $gris-oscuro;
+                                    color: #ffffff;
+                                    border-bottom: 2px solid #37383C;
                                 }
 
                                 .menu-items:hover {
-                                    border-bottom: 2px solid $turquesa;
+                                    border-bottom: 2px solid #50E3C2;
                                 }
                                 
                                 .menu-creargifo {
-                                    border: 1px solid $blanco;
+                                    border: 1px solid #ffffff;
                                 }
 
                                 .menu-creargifo:hover {
-                                    background-color: $blanco;
+                                    background-color: #ffffff;
                                 }
 
                                 .menu-creargifo:active {
-                                    background-color: $blanco;
+                                    background-color: #ffffff;
                                 }
                             }
                         }
