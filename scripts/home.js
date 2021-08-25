@@ -217,6 +217,35 @@ function busquedaGifosVerMas() {
         })
 }
 
+// TRENDING TOPICS
+//1. traigo los 5 primer trending topics de la API
+//2. reemplazo el texto con los resultados
+let trendingTopicsTexto = document.getElementById('trending-topics');
+window.onload = trendingTopics();
+
+function trendingTopics() {
+    let url = `https://api.giphy.com/v1/trending/searches?api_key=${apiKey}`;
+
+    return fetch(url)
+        .then(resp => resp.json()) //me trae el json con los trending topics
+        .then(content => {
+            //object with data & meta
+            let topics = content.data;
+            //console.log("Trending Topics", topics);
+            trendingTopicsTexto.innerHTML = `<span class="trending-topics-link">${topics[0]}</span>, <span class="trending-topics-link">${topics[1]}</span>, <span class="trending-topics-link">${topics[2]}</span>, <span class="trending-topics-link">${topics[3]}</span>, <span class="trending-topics-link">${topics[4]}</span>`;
+
+            let topicBtn = document.getElementsByClassName('trending-topics-link');
+            for (let x = 0; x < topicBtn.length; x++) {
+                topicBtn[x].addEventListener('click', function (e) {
+                    inputBuscador.value = topics[x];
+                    busquedaGifos();
+                })
+            }
+        })
+        .catch(err => {
+            console.log("error trending topics" + err);
+        })
+}
 
 
 //FUNCIONES GIF:
