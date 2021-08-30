@@ -47,7 +47,7 @@ function showFavourites(content) {
         <div class="gif-acciones-resultados-fav">
             <div class="iconos-acciones-gif">
                 <button class="iconos-acciones-box favorito-fav" onclick="borrarFav('${content.data[i].id}')">
-                    <img src="./images/icon-fav-active.svg" alt="icon-favorito" id="icon-borrar-fav-${content.data[i].id}">
+                    <img src="./images/icon_trash.svg" alt="icon-favorito" id="icon-borrar-fav-${content.data[i].id}">
                 </button>
                 <button class="iconos-acciones-box download" onclick="descargarGif('${content.data[i].images.downsized.url}', '${content.data[i].slug}')">
                     <img src="./images/icon-download.svg" alt="icon-dowlnoad">
@@ -65,27 +65,32 @@ function showFavourites(content) {
     </div>
         `;
     }
+    
 }
 
 //BORRAR FAV
-function deleteFavs(gif){
+function borrarFav(gif){
     let arrayAux = [];
     arrayAux = JSON.parse(favoritosString);
     let indice = arrayAux.indexOf(gif);
+    //console.log(arrayAux);
+    //console.log(indice);
 
     arrayAux.splice(indice, 1);
 
     let nuevoFavoritosString = JSON.stringify(arrayAux);
     localStorage.setItem("gifosFavoritos", nuevoFavoritosString);
+   console.log(favoritosString);
 
-
-
+    //cambio icono
     let iconFavBorrar = document.getElementById('icon-borrar-fav-' + gif);
-    iconFavBorrar.setAttribute("src", "./images/icon-fav-hover.svg");
+    iconFavBorrar.setAttribute("src", "./images/icon_trash.svg");
 
-
+    //refresco pag
     location.reload();
 }
+
+
 
 //DESCARGAR GIF
 async function descargarGif(gifImg, gifNombre) {
@@ -124,7 +129,7 @@ function cerrarModalMobileFav() {
 function borrarFavMaxMob(gif){
     let iconNoFavMaxMob = document.getElementById('icon-borrar-fav-max-mobile-' + gif);
     iconNoFavMaxMob.setAttribute("src", "./images/icon-fav-hover.svg");
-    deleteFavs(gif);
+    borrarFav(gif);
 }
 
 
@@ -159,5 +164,5 @@ function cerrarModalDesktopFav() {
 function borrarFavMax(gif){
     let iconNoFavMax = document.getElementById('icon-borrar-fav-max-' + gif);
     iconNoFavMax.setAttribute("src", "./images/icon-fav-hover.svg");
-    deleteFavs(gif);
+    borrarFav(gif);
 }
